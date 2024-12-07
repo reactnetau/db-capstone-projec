@@ -925,7 +925,7 @@
     </dashboard>
   </dashboards>
   <windows source-height='30'>
-    <window class='worksheet' maximized='true' name='Customers sales'>
+    <window class='worksheet' name='Customers sales'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -981,7 +981,7 @@
       </cards>
       <simple-id uuid='{7F443E9B-4891-44E2-BC6A-1E46C49B9256}' />
     </window>
-    <window class='worksheet' name='Sales Bubble Chart'>
+    <window class='worksheet' maximized='true' name='Sales Bubble Chart'>
       <cards>
         <edge name='left'>
           <strip size='160'>
