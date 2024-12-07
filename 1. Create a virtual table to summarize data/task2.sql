@@ -1,3 +1,5 @@
+USE LittleLemonDB;
+
 SELECT
     CustomerDetails.CustomerDetailsID AS CustomerID,
     CustomerDetails.CustomerName AS FullName,
@@ -9,14 +11,10 @@ SELECT
 FROM
     CustomerDetails
 JOIN
-    Bookings ON CustomerDetails.CustomerDetailsID = Bookings.CustomerDetailsID
-JOIN
-    Orders ON Bookings.OrderID = Orders.OrderID
-JOIN
+    Orders ON CustomerDetails.CustomerDetailsID = Orders.CustomerID
+LEFT JOIN
     Menu ON Orders.MenuItems = Menu.MenuID
-JOIN
+LEFT JOIN
     MenuItems ON Menu.MenuItemsID = MenuItems.MenuItemsID
 WHERE
-    Orders.TotalCost > 150
-ORDER BY
-    Orders.TotalCost ASC;
+    Orders.TotalCost > 150;

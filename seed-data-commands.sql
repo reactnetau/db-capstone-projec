@@ -1,74 +1,75 @@
 USE LittleLemonDB;
 -- Insert data for CustomerDetails
-INSERT INTO `LittleLemonDB`.`CustomerDetails` (CustomerName, CustomerPhone)
+INSERT INTO `LittleLemonDB`.`CustomerDetails` (CustomerDetailsID, CustomerName, CustomerPhone)
 VALUES
-('John Doe', '123-456-7890'),
-('Jane Smith', '987-654-3210'),
-('Mike Johnson', '555-123-4567'),
-('Emily Davis', '555-234-5678'),
-('David Miller', '555-345-6789'),
-('Sarah Wilson', '555-456-7890'),
-('Andrew Brown', '555-567-8901'),
-('Jessica Lee', '555-678-9012'),
-('Daniel White', '555-789-0123'),
-('Sophia Harris', '555-890-1234'),
-('Mason Clark', '555-901-2345'),
-('Lily Lewis', '555-012-3456'),
-('Oliver Walker', '555-123-4568'),
-('Charlotte Hall', '555-234-5679'),
-('Lucas Allen', '555-345-6780'),
-('Amelia Scott', '555-456-7891'),
-('Ethan King', '555-567-8902'),
-('Mia Young', '555-678-9013'),
-('Benjamin Green', '555-789-0124'),
-('Zoe Adams', '555-890-1235');
+(1, 'John Doe', '123-456-7890'),
+(2, 'Jane Smith', '987-654-3210'),
+(3, 'Mike Johnson', '555-123-4567'),
+(4, 'Emily Davis', '555-234-5678'),
+(5, 'David Miller', '555-345-6789'),
+(6, 'Sarah Wilson', '555-456-7890'),
+(7, 'Andrew Brown', '555-567-8901'),
+(8, 'Jessica Lee', '555-678-9012'),
+(9, 'Daniel White', '555-789-0123'),
+(10, 'Sophia Harris', '555-890-1234'),
+(11, 'Mason Clark', '555-901-2345'),
+(12, 'Lily Lewis', '555-012-3456'),
+(13, 'Oliver Walker', '555-123-4568'),
+(14, 'Charlotte Hall', '555-234-5679'),
+(15, 'Lucas Allen', '555-345-6780'),
+(16, 'Amelia Scott', '555-456-7891'),
+(17, 'Ethan King', '555-567-8902'),
+(18, 'Mia Young', '555-678-9013'),
+(19, 'Benjamin Green', '555-789-0124'),
+(20, 'Zoe Adams', '555-890-1235');
 
 -- Insert data for DeliveryStatus
-INSERT INTO `LittleLemonDB`.`DeliveryStatus` (DeliveryDate, Status)
+INSERT INTO `LittleLemonDB`.`DeliveryStatus` (DeliveryStatusID, DeliveryDate, Status)
 VALUES
-('2024-12-07 18:00:00', 1),
-('2024-12-07 19:30:00', 2),
-('2024-12-07 20:00:00', 3),
-('2024-12-08 10:00:00', 1),
-('2024-12-08 12:00:00', 2),
-('2024-12-08 14:30:00', 3),
-('2024-12-08 16:00:00', 1),
-('2024-12-08 17:30:00', 2),
-('2024-12-08 19:00:00', 3),
-('2024-12-08 20:30:00', 1),
-('2024-12-09 08:00:00', 2),
-('2024-12-09 10:30:00', 3),
-('2024-12-09 12:00:00', 1),
-('2024-12-09 14:00:00', 2),
-('2024-12-09 15:30:00', 3),
-('2024-12-09 17:00:00', 1),
-('2024-12-09 18:30:00', 2),
-('2024-12-09 20:00:00', 3),
-('2024-12-09 21:30:00', 1);
+(1, '2024-12-07 18:00:00', 1),
+(2, '2024-12-07 19:30:00', 2),
+(3, '2024-12-07 20:00:00', 3),
+(4, '2024-12-08 10:00:00', 1),
+(5, '2024-12-08 12:00:00', 2),
+(6, '2024-12-08 14:30:00', 3),
+(7, '2024-12-08 16:00:00', 1),
+(8, '2024-12-08 17:30:00', 2),
+(9, '2024-12-08 19:00:00', 3),
+(10, '2024-12-08 20:30:00', 1),
+(11, '2024-12-09 08:00:00', 2),
+(12, '2024-12-09 10:30:00', 3),
+(13, '2024-12-09 12:00:00', 1),
+(14, '2024-12-09 14:00:00', 2),
+(15, '2024-12-09 15:30:00', 3),
+(16, '2024-12-09 17:00:00', 1),
+(17, '2024-12-09 18:30:00', 2),
+(18, '2024-12-09 20:00:00', 3),
+(19, '2024-12-09 21:30:00', 1);
 
 -- Insert data for MenuItems
-INSERT INTO `LittleLemonDB`.`MenuItems` (Cuisine, Starter, Dessert, CourseName)
+
+INSERT INTO `LittleLemonDB`.`MenuItems` (MenuItemsID, Cuisine, Starter, Dessert, CourseName)
 VALUES
-('Italian', 'Bruschetta', 'Tiramisu', 'Main Course'),
-('French', 'Escargot', 'Crème Brûlée', 'Main Course'),
-('Indian', 'Samosa', 'Gulab Jamun', 'Main Course'),
-('Mexican', 'Nachos', 'Churros', 'Main Course'),
-('Chinese', 'Spring Rolls', 'Fortune Cookies', 'Main Course'),
-('Japanese', 'Edamame', 'Mochi', 'Main Course'),
-('American', 'Buffalo Wings', 'Apple Pie', 'Main Course'),
-('Greek', 'Spanakopita', 'Baklava', 'Main Course'),
-('Thai', 'Tom Yum Soup', 'Sticky Rice with Mango', 'Main Course'),
-('Spanish', 'Patatas Bravas', 'Flan', 'Main Course'),
-('Mediterranean', 'Hummus with Pita', 'Baklava', 'Main Course'),
-('Vietnamese', 'Vietnamese Spring Rolls', 'Che Ba Mau', 'Main Course'),
-('Caribbean', 'Jerk Chicken', 'Rum Cake', 'Main Course'),
-('Turkish', 'Kebabs', 'Baklava', 'Main Course'),
-('Lebanese', 'Tabbouleh', 'Knafeh', 'Main Course'),
-('Moroccan', 'Bastilla', 'Baklava', 'Main Course'),
-('Ethiopian', 'Injera', 'Atayef', 'Main Course'),
-('Korean', 'Kimchi', 'Bingsu', 'Main Course'),
-('Persian', 'Kebab', 'Faloodeh', 'Main Course'),
-('Fusion', 'Fusion Appetizer', 'Fusion Dessert', 'Main Course');
+(1, 'Italian', 'Bruschetta', 'Tiramisu', 'Main Course'),
+(2, 'French', 'Escargot', 'Creme Brulee', 'Main Course'),
+(3, 'Indian', 'Samosa', 'Gulab Jamun', 'Main Course'),
+(4, 'Mexican', 'Nachos', 'Churros', 'Main Course'),
+(5, 'Chinese', 'Spring Rolls', 'Fortune Cookies', 'Main Course'),
+(6, 'Japanese', 'Edamame', 'Mochi', 'Main Course'),
+(7, 'American', 'Buffalo Wings', 'Apple Pie', 'Main Course'),
+(8, 'Greek', 'Spanakopita', 'Baklava', 'Main Course'),
+(9, 'Thai', 'Tom Yum Soup', 'Sticky Rice with Mango', 'Main Course'),
+(10, 'Spanish', 'Patatas Bravas', 'Flan', 'Main Course'),
+(11, 'Mediterranean', 'Hummus with Pita', 'Baklava', 'Main Course'),
+(12, 'Vietnamese', 'Vietnamese Spring Rolls', 'Che Ba Mau', 'Main Course'),
+(13, 'Caribbean', 'Jerk Chicken', 'Rum Cake', 'Main Course'),
+(14, 'Turkish', 'Kebabs', 'Baklava', 'Main Course'),
+(15, 'Lebanese', 'Tabbouleh', 'Knafeh', 'Main Course'),
+(16, 'Moroccan', 'Bastilla', 'Baklava', 'Main Course'),
+(17, 'Ethiopian', 'Injera', 'Atayef', 'Main Course'),
+(18, 'Korean', 'Kimchi', 'Bingsu', 'Main Course'),
+(19, 'Persian', 'Kebab', 'Faloodeh', 'Main Course'),
+(20, 'Fusion', 'Fusion Appetizer', 'Fusion Dessert', 'Main Course');
 
 -- Insert data for Menu
 INSERT INTO `LittleLemonDB`.`Menu` (MenuItemsID, MenuName)
@@ -95,13 +96,13 @@ VALUES
 (20, 'Fusion Feast');
 
 -- Insert data for StaffMember
-INSERT INTO `LittleLemonDB`.`StaffMember` (StaffRole, StaffSalary)
+INSERT INTO `LittleLemonDB`.`StaffMember` (StaffMemberID, StaffRole, StaffSalary)
 VALUES
-('Chef', 5000),
-('Waiter', 2000),
-('Manager', 3000),
-('Dishwasher', 1500),
-('Bartender', 2200);
+(1, 'Chef', 5000),
+(2, 'Waiter', 2000),
+(3, 'Manager', 3000),
+(4, 'Dishwasher', 1500),
+(5, 'Bartender', 2200);
 
 -- Insert data for Orders
 INSERT INTO `LittleLemonDB`.`Orders` (OrderDate, Quantity, TotalCost, DeliveryStatusID, StaffMemberID, MenuItems, CustomerID)
@@ -127,24 +128,24 @@ VALUES
 ('2024-12-09 21:30:00', 3, 160.00, 1, 1, 19, 1);
 
 -- Insert data for Bookings without OrderID
-INSERT INTO `LittleLemonDB`.`Bookings` (TableNumber, BookingDate, CustomerDetailsID)
+INSERT INTO `LittleLemonDB`.`Bookings` (BookingID, TableNumber, BookingDate, CustomerDetailsID)
 VALUES
-('A1', '2024-12-07 18:00:00', 1),
-('A2', '2024-12-07 19:30:00', 2),
-('B1', '2024-12-07 20:00:00', 3),
-('B2', '2024-12-08 10:00:00', 4),
-('C1', '2024-12-08 12:00:00', 5),
-('C2', '2024-12-08 14:30:00', 6),
-('D1', '2024-12-08 16:00:00', 7),
-('D2', '2024-12-08 17:30:00', 8),
-('E1', '2024-12-08 19:00:00', 9),
-('E2', '2024-12-08 20:30:00', 10),
-('F1', '2024-12-09 08:00:00', 11),
-('F2', '2024-12-09 10:30:00', 12),
-('G1', '2024-12-09 12:00:00', 13),
-('G2', '2024-12-09 14:00:00', 14),
-('H1', '2024-12-09 15:30:00', 15),
-('H2', '2024-12-09 17:00:00', 16),
-('I1', '2024-12-09 18:30:00', 17),
-('I2', '2024-12-09 20:00:00', 18),
-('J1', '2024-12-09 21:30:00', 19);
+(1, 'A1', '2024-12-07 18:00:00', 1),
+(2, 'A2', '2024-12-07 19:30:00', 2),
+(3, 'B1', '2024-12-07 20:00:00', 3),
+(4, 'B2', '2024-12-08 10:00:00', 4),
+(5, 'C1', '2024-12-08 12:00:00', 5),
+(6, 'C2', '2024-12-08 14:30:00', 6),
+(7, 'D1', '2024-12-08 16:00:00', 7),
+(8, 'D2', '2024-12-08 17:30:00', 8),
+(9, 'E1', '2024-12-08 19:00:00', 9),
+(10, 'E2', '2024-12-08 20:30:00', 10),
+(11, 'F1', '2024-12-09 08:00:00', 11),
+(12, 'F2', '2024-12-09 10:30:00', 12),
+(13, 'G1', '2024-12-09 12:00:00', 13),
+(14, 'G2', '2024-12-09 14:00:00', 14),
+(15, 'H1', '2024-12-09 15:30:00', 15),
+(16, 'H2', '2024-12-09 17:00:00', 16),
+(17, 'I1', '2024-12-09 18:30:00', 17),
+(18, 'I2', '2024-12-09 20:00:00', 18),
+(19, 'J1', '2024-12-09 21:30:00', 19);

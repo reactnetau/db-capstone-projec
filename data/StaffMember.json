@@ -1,0 +1,5 @@
+[{"StaffMemberID":1, "StaffRole":"Chef", "StaffSalary":5000},
+ {"StaffMemberID":2, "StaffRole":"Waiter", "StaffSalary":2000},
+ {"StaffMemberID":3, "StaffRole":"Manager", "StaffSalary":3000},
+ {"StaffMemberID":4, "StaffRole":"Dishwasher", "StaffSalary":1500},
+ {"StaffMemberID":5, "StaffRole":"Bartender", "StaffSalary":2200}]
